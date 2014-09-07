@@ -1,5 +1,5 @@
 #This script subscribe an lsf job into boomer
-if [ -e $1.out ] then
+if [ -e "$1.out" ]; then
  rm $1.out
 fi
 touch $1.out
